@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <!--ralewayfonts-->
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+      <!-- fontawesome css -->
+      <link rel="stylesheet" href="css/all.min.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- mediaquery css -->
+      <link rel="stylesheet" href="css/media.css">
+
+
+      <title>library</title>
+</head>
+
+<body>
+      <div class="wrap">
+            <!--======================================
+            header
+            =======================================-->
+            <header>
+                  <div class="container">
+                        <div class="header-con">
+                              <div class="logo">OWN LIBRARY</div>
+                              <div class="search">
+                                    <label for="search">Search</label>
+                                    <input type="text" id="search">
+                              </div>
+                        </div>
+                  </div>
+            </header>
+            <!--======================================
+            success message
+            =======================================-->
+            <div id="success" class="alert alert-success alert-dismissible fade show" role="alert">
+                  <strong>Congratulations!</strong> Your book has been successfully added.
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                  </button>
+            </div>
+            <!--======================================
+            library contents
+            =======================================-->
+            <div class="body">
+                  <div class="container">
+                        <div class="body-con">
+                              <h1>Welcome To Your Own Library</h1>
+                              <form action="#" id="libraryForm">
+                                    <div class="row">
+                                          <div class="col-2 text-left">
+                                                <div class="label-con">
+                                                      <label for="name">Name</label>
+                                                      <label for="author">Author</label>
+                                                      <label for="fiction">Type</label>
+                                                </div>
+                                          </div>
+                                          <div class="col-10 text-left">
+                                                <div class="input-container">
+                                                      <input id="name" type="text" placeholder="book name">
+                                                      <div class="nameAlertTxt">book name should be more than 1
+                                                            character</div>
+                                                      <input id="author" type="text" placeholder="author">
+                                                      <div class="authorAlertTxt">author name should be more than 1
+                                                            character</div>
+                                                      <div class="fiction-con">
+                                                            <input name="type" id="fiction" type="radio"
+                                                                  value="Fiction">
+                                                            <label for="fiction">Fiction</label>
+                                                      </div>
+                                                      <div class="programming-con">
+                                                            <input name="type" id="programming" type="radio"
+                                                                  value="Computer programming">
+                                                            <label for="programming">Computer
+                                                                  Programming</label>
+                                                      </div>
+                                                      <div class="cooking-con">
+                                                            <input name="type" id="cooking" type="radio"
+                                                                  value="Cooking">
+                                                            <label for="cooking">Cooking</label>
+                                                      </div>
+                                                      <p class="typeText">Add your book type</p>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="button-container">
+                                          <button class="submit">ADD BOOK</button>
+                                    </div>
+                              </form>
+                              <div class="library">
+                                    <h2>YOUR BOOK</h2>
+                                    <div class="library-con-container">
+                                          <table>
+                                                <tr>
+                                                      <th>NAME</th>
+                                                      <th>AUTHOR</th>
+                                                      <th>TYPE</th>
+                                                </tr>
+                                                <tbody class="tBody">
+                                                </tbody>
+
+                                          </table>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <!--wrap-->
+
+      <!-- =====================================-->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous">
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+      </script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+      </script>
+      <!-- main js -->
+      <script src="js/custom.js"></script>
+</body>
+
+</html>
